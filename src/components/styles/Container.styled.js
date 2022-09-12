@@ -5,5 +5,5 @@ width: 1000px;
 max-width: 100%;
 padding: 0 20px;
 margin:0 auto;
-background-color:peru;
+border:1px solid pink;
 `
