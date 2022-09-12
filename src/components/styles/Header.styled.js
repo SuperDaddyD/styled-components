@@ -39,4 +39,8 @@ export const Logo = styled.img`
 export const Image = styled.img`
   width: 375px;
   margin-left: 40px;
+  @media(max-width: ${({theme})=>theme.mobile}px){
+    margin:40px 0px 30px;
+  }
+
 `;

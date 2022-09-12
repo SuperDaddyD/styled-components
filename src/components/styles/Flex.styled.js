@@ -7,4 +7,8 @@ align-items: center;
 & > ul{
     flex:1;
 }
+@media (max-width:${({theme})=>theme.mobile}px){
+  text-align:center ;
+  flex-direction:column;
+}
 `
