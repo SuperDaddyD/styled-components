@@ -9,7 +9,8 @@ const theme = {
     body:'#fff',
     footer:'#00333',
     check:'pink'
-  }
+  },
+  mobile:'768'
 }
 
 function App() {
