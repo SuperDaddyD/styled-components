@@ -4,17 +4,19 @@ import Card from "./components/Card";
 import { ThemeProvider } from "styled-components";
 import GlobalStyles from "./components/styles/GlobalsStyles";
 import content from "./content";
-import { ReactComponent as Collab } from "./images/collab.svg"
+import { ReactComponent as Collab } from "./images/collab.svg";
+import Footer from "./components/Footer";
 
 const theme = {
   colors:{
     header:'#ebfbff',
     body:'#fff',
-    footer:'#00333',
+    footer:'#072207',
     check:'pink'
   },
   mobile:'768'
 }
+
 
 function App() {
   return (
@@ -23,11 +25,12 @@ function App() {
       <GlobalStyles/>
         <Header />
         <Container>
-          <h1>Hi Guys</h1>
           {content.map((item,index)=>(
              <Card key={index} item={item} ></Card>
           ))}
-        </Container>
+          </Container>
+          <Footer/>
+
       </>
     </ThemeProvider>
   );
